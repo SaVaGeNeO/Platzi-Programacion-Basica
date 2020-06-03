@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Tu peso en un lugar donde pesas menos</title>
+    </head>
+    <body>
+      <h1>Tu peso en otro planeta</h1>
+      <p>En la tierra pesas distinto que en cualquier otro planeta</p>
+      <script>
+        var usuario = prompt("Cual es tu peso?");
+        var planeta = prompt("Elige tu planeta\n1 es Marte, 2 es Jupiter, 3 es Mercurio, 4 es Venus\n 5 es Saturno, 6 es Urano, 7 es Neptuno, 8 es Pluton");
+        var peso = parseInt(usuario);
+        var g_tierra = 9.8;
+        var g_marte = 3.7;
+        var g_jupiter = 24.8;
+        var g_mercurio = 3.7;
+        var g_venus = 8.7;
+        var g_saturno = 10.44;
+        var g_urano = 8.87;
+        var g_neptuno = 11.15;
+        var g_pluton = 0.62;
+        var peso_final;
+        var my_planet;
+        if (planeta == 1)
+        {
+          peso_final = peso * g_marte / g_tierra;
+          my_planet = "Marte"
+        }
+        else if (planeta == 2)
+        {
+          peso_final = peso * g_jupiter / g_tierra;
+          my_planet = "Jupiter"
+        }
+        else if (planeta == 3)
+        {
+          peso_final = peso * g_mercurio/ g_tierra;
+          my_planet = "Mercurio"
+        }
+        else if (planeta == 4)
+        {
+          peso_final = peso * g_venus / g_tierra;
+          my_planet = "Venus"
+        }
+        else if (planeta == 5)
+        {
+          peso_final = peso * g_saturno / g_tierra
+          my_planet = "Saturno"
+        }
+        else if (planeta == 6)
+        {
+          peso_final = peso * g_urano / g_tierra
+          my_planet = "Urano"
+        }
+        else if (planeta == 7)
+        {
+          peso_final = peso * g_neptuno / g_tierra
+          my_planet = "Neptuno"
+        }
+        else if (planeta == 8)
+        {
+          peso_final = peso * g_pluton / g_tierra
+          my_planet = "Pluton"
+        }
+        else
+        {
+          peso_final = 100000;
+          my_planet = "Somewhere"
+        }
+        peso_final = parseInt(peso_final);
+        document.write("Tu peso en " + my_planet + " es <strong>" + peso_final + " kg </strong>");
+        </script>
+     </body>
+</html>
